@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header class="sticky top-0 left-0 right-0 bg-zinc-100">
+        <div class="h-32 flex justify-between items-center px-20 bg-zinc-100 ">
+            <div>
+                <button id="home" class="btn text-black w-28 text-lg font-bold"
+                    style="background-color: #B4F461;">Home</button>
+            </div>
+            <div class="flex items-center space-x-3">
+                <img src="assets/logo.png" alt="">
+                <h6 class="font-bold text-xl">Donate Bangladesh</h6>
+            </div>
+            <div class="flex items-center space-x-2">
+                <img src="assets/coin.png" alt="">
+                <h2 id="total-money" class="font-semibold text-l">5500</h2>
+                <h2 class="font-semibold text-l">BDT</h2>
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+        <h1 class="font-extrabold text-3xl mb-9 ml-3 mt-16">Important FAQ</h1>
+        <div tabindex="0" class="collapse collapse-arrow border-base-300 bg-white border">
+            <div class="collapse-title text-xl font-medium">what is the document object model(DOM)</div>
+            <div class="collapse-content">
+                <p class="text-l">The Document Object Model (DOM) is an interface that represents the structure of a web document as a tree of objects, allowing dynamic manipulation of HTML and XML content through JavaScript.</p>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div tabindex="0" class="collapse collapse-arrow border-base-300 bg-white border">
+            <div class="collapse-title text-xl font-medium">How do you select an element from the DOM</div>
+            <div class="collapse-content">
+                <p class="text-l">You can select an element from the DOM using various methods in JavaScript. Common methods include document.getElementById("id") for selecting by ID, document.querySelector("selector") for selecting using CSS selectors, and document.getElementsByClassName("class") for selecting by class name. Each method returns the first matching element or a collection of elements, which you can then manipulate.</p>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div tabindex="0" class="collapse collapse-arrow border-base-300 bg-white border">
+            <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why is it useful?</div>
+            <div class="collapse-content">
+                <p class="text-l">Event delegation is a technique in the DOM where a single event listener is added to a parent element to manage events on its child elements. This is useful because it reduces the number of event listeners needed, improves performance, and handles dynamically added elements without requiring new event listeners for each child. It leverages event bubbling, where events propagate up the DOM tree.</p>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div tabindex="0" class="collapse collapse-arrow border-base-300 bg-white border">
+            <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM?</div>
+            <div class="collapse-content">
+                <p class="text-l">You can manipulate an element's attributes using methods like setAttribute() to set or update attributes and getAttribute() to retrieve them. For styles, you can access the style property (e.g., element.style.color = "red";) to change CSS properties directly. You can also use classList.add(), remove(), or toggle() to modify CSS classes for styling.</p>
+            </div>
+        </div>
+    </main>
+
+
+
+    <!-- <script src="js/nav.js"></script> -->
+    <!-- <script src="js/history,.js"></script> -->
+    <script src="js/blog.js"></script>
+</body>
+
+</html>
